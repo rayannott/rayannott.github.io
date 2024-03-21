@@ -1,13 +1,49 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="utf-8" />   <!--It is necessary to use the UTF-8 encoding with plotly graphics to get e.g. negative signs to render correctly -->
+<meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Presidential "elections" 2024</title>
+<style>
+    body {
+        text-align: center;
+        background-color: #222;
+        color: #fff;
+    }
+    
+    h1 {
+        color: #fff;
+    }
+    
+    p {
+        color: #ccc;
+    }
+</style>
 </head>
 
 <body>
-<h1>Here's a Plotly graph!</h1>
-{{ moscow }}
-<p>And here's some text after the graph.</p>
+<h1>Presidential elections 2024</h1>
+{{ hist_turnout }}
+
+{{ against_all_russia_scatter }}
+
+{{ against_all_outside_russia_scatter }}
+
+{{ putin_percentage_hist }}
+
+{{ regions_result_turnout }}
+
+{{ cities_result_turnout }}
+
+{{ moscow_result_turnout }}
+
+{{ davankov_vs_putin_russia }}
+
+{{ davankov_vs_putin_not_russia }}
+
+{{ by_region_all_scatter }}
+
+{{ by_area_moscow_scatter }}
+
 </body>
 </html>
